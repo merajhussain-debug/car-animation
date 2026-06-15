@@ -1,0 +1,10 @@
+# Source frames (duplicated in veloce/public/frames)
+ezgif-5e81e62968321831-jpg/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

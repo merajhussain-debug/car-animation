@@ -5,10 +5,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import ScrollFrameCanvas from "./ScrollFrameCanvas";
 
 const FRAME_COUNT = 240;
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 function getFramePath(index: number): string {
   const padded = String(index + 1).padStart(3, "0");
-  return `/frames/ezgif-frame-${padded}.jpg`;
+  return `${BASE_PATH}/frames/ezgif-frame-${padded}.jpg`;
 }
 
 export default function HeroSection() {
